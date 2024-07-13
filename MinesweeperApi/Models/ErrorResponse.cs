@@ -6,10 +6,10 @@ namespace MinesweeperApi.Models
     {
         public ErrorResponse(string err) 
         { 
-            error = err; 
+            _error = err; 
         }
 
         [JsonProperty("error")]
-        private string error { get; set; }
+        private string _error { get; set; }
     }
 }

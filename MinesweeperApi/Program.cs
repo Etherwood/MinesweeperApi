@@ -1,3 +1,5 @@
+using MinesweeperApi.MinesweeperServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
+builder.Services.AddSingleton<MinesweeperService>();
 
 var app = builder.Build();
 

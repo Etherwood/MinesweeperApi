@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace MinesweeperApi.Models
+﻿namespace MinesweeperApi.Models
 {
     public class NewGameRequest
     {
